@@ -1,0 +1,8 @@
+#MONGODB 
+id: user
+password: SpySXudznlfysmGy 
+
+
+promises are either solved or rejected 
+=> resolve
+=> rejected
