@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // const AddressSchemaDef = new mongoose.schema();
 
-const UserSchemaDef = mongoose.schema({
+const UserSchemaDef =new mongoose.Schema({
     name: {
         type: String,
         required: true // if compulsory
@@ -11,7 +11,7 @@ const UserSchemaDef = mongoose.schema({
         required: true,
         unique: true
     },
-    passowrd:{
+    password:{
         type: String,
         required: true
     },

@@ -10,6 +10,7 @@ class AuthController{
     registerUser = async (req, res, next)=>{
         try{
             let body = req.body;
+            console.log(body)
     //user service
         if(req.file){
             body.image = req.file.filename
