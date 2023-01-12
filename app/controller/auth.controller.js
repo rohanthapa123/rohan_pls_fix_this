@@ -8,9 +8,9 @@ class AuthController{
     this.user_svc = new UserService();
  }
     registerUser = async (req, res, next)=>{
+        let body = req.body;
+        console.log(body)
         try{
-            let body = req.body;
-            console.log(body)
     //user service
         if(req.file){
             body.image = req.file.filename
@@ -41,6 +41,7 @@ class AuthController{
             msg: "Register data test"
         })
         }catch(excep){
+            console.log(excep)
             next({status:400, msg: excep})
         }
     }
